@@ -68,3 +68,5 @@
 [28/Nov/2025:21:50:35 +0000] 404 - GET http 217.154.126.101 "/.env.example" [Client 75.133.123.28] [Length 122] [Gzip 1.35] "Go-http-client/1.1" "-"
 [28/Nov/2025:21:50:47 +0000] 404 - GET http 217.154.126.101 "/.vscode/sftp.json" [Client 165.227.18.188] [Length 552] [Gzip -] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "-"
 [28/Nov/2025:21:50:58 +0000] 404 - GET http 217.154.126.101 "/.env.development" [Client 143.244.173.167] [Length 552] [Gzip -] "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36" "-"
+[28/Nov/2025:22:33:47 +0000] 200 - GET http bekerh.ddns.net "/" [Client 142.111.108.82] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" "-"
+[28/Nov/2025:22:36:45 +0000] 200 - GET http 217.154.126.101 "/" [Client 103.252.89.75] [Length 1033] [Gzip -] "-" "-"
