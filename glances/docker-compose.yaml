@@ -1,0 +1,14 @@
+services:
+  glances:
+    image: nicolargo/glances:latest-full
+    container_name: glances
+    restart: always
+    pid: host
+    ports:
+      - 83:61208  # <--- Ensures port binding
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /sys:/sys:ro
+      - /proc:/proc:ro
+    # 🌟 NEW LINE: Forces Glances into Web Server mode
+    command: ["glances", "-w"]

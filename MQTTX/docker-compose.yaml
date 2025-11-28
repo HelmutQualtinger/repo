@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mqtt-explorer:
+    image: smeagolworms4/mqtt-explorer
+    container_name: mqtt-explorer
+    restart: always
+    ports:
+      # Maps host port 4000 to the container's internal HTTP/VNC port
+      - "85:4000" 
+    volumes:
+      # Persist your configuration and connection history
+      - ./mqtt-explorer-config:/mqtt-explorer/config

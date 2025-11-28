@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  container-stats:
+    image: virtualzone/docker-container-stats:latest
+    container_name: container_stats
+    restart: unless-stopped
+    ports:
+      - "86:8080"  # Access the web interface on host port 8080
+    environment:
+      # Optional: Set the update interval in seconds (default is 10)
+      STATS_UPDATE_INTERVAL: 5 
+    volumes:
+      # REQUIRED: Gives the container read-only access to the Docker daemon
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      # Optional: Persist the internal SQLite database (recommended)
+      - ./container-stats-db:/opt/docker-stats/db
